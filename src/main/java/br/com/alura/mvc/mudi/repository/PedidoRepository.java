@@ -15,7 +15,7 @@ import br.com.alura.mvc.mudi.model.StatusPedido;
 @Repository
 public interface PedidoRepository extends JpaRepository<Pedido, Long>{
 
-//	@Cacheable("books")
+	@Cacheable("books")
 	List<Pedido> findByStatus(StatusPedido status, Pageable sort);
 
 	@Query("SELECT p FROM Pedido p JOIN p.user u WHERE u.username = :username")
