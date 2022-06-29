@@ -33,6 +33,6 @@ public class OfertasRest {
 		pedido.getOfertas().add(novaOferta);
 		pedidoRepository.save(pedido);
 		
-		return novaOferta;
+		return novaOferta;//
 	}
 }
