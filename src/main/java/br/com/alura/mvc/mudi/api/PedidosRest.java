@@ -20,11 +20,6 @@ public class PedidosRest {
 	@Autowired
 	private PedidoRepository pedidosRepository;
 	
-	@GetMapping("teste")
-	public String oi() {
-		return "Olá mundo";
-	}
-	
 	@GetMapping("aguardando")
 	public List<Pedido> getPedidosAguardandoOfertas(){
 		
