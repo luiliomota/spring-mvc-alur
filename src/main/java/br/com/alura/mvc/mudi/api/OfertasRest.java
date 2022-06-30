@@ -14,7 +14,7 @@ import br.com.alura.mvc.mudi.model.Pedido;
 import br.com.alura.mvc.mudi.repository.PedidoRepository;
 
 @RestController
-@RequestMapping("/ofertas")
+@RequestMapping("/api/ofertas")
 public class OfertasRest {
 
 	@Autowired
