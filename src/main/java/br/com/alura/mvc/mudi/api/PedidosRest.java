@@ -26,6 +26,6 @@ public class PedidosRest {
 		Sort sort = Sort.by("dataEntrega").ascending();
 		PageRequest paginacao = PageRequest.of(0, 20, sort);
 		
-		return pedidosRepository.findAll();
+		return pedidosRepository.findByStatus(StatusPedido.AGUARDANDO, paginacao);
 	}
 }
